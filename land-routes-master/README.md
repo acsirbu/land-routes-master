@@ -32,3 +32,20 @@ _________
 I have created a simple Spring Boot application exposing a REST endpoint with a logic of routing between countries. 
 A list of countries with borders is available at another endpoint. So the application serves both as a REST server and REST client.
 
+## How to run
+
+The only prerequisite is Java 11.
+
+ - Build the application:
+   - Windows: `mvnw.cmd clean install`
+   - Unix: `mvnw clean install`
+   
+ - Run the application:
+   - Windows: `mvnw.cmd spring-boot:run`
+   - Unix: `mvnw spring-boot:run`
+
+ - Try it out in Postman / Insomnia / Command line:
+    ```
+   curl --request GET \
+    --url http://localhost:8080/routing/CZE/ITA
+   
